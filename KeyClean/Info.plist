@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>en</string>
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+    <key>CFBundleIconFile</key>
+    <string>AppIcon</string>
+    <key>CFBundleIdentifier</key>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>KeyClean</string>
+    <key>CFBundleDisplayName</key>
+    <string>KeyClean</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>LSMinimumSystemVersion</key>
+    <string>13.0</string>
+    <key>NSHumanReadableCopyright</key>
+    <string>Copyright © 2025 KeyClean. All rights reserved.</string>
+    <key>LSApplicationCategoryType</key>
+    <string>public.app-category.utilities</string>
+
+    <!-- Required for CGEvent tap (Accessibility) -->
+    <key>NSAccessibilityUsageDescription</key>
+    <string>KeyClean needs Accessibility access to block keyboard and trackpad input during cleaning mode.</string>
+
+    <!-- Required for HID-level event tap (blocks Mission Control, Spaces, Exposé) -->
+    <key>NSInputMonitoringUsageDescription</key>
+    <string>KeyClean needs Input Monitoring access to block all trackpad gestures including Mission Control and Space switching during cleaning mode.</string>
+
+    <!-- Prevent app from appearing in Dock during cleaning (optional) -->
+    <key>LSUIElement</key>
+    <false/>
+</dict>
+</plist>
