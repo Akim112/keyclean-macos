@@ -21,8 +21,10 @@ xcuserdata/
 *.user
 *.userdom
 *.xcuserdatad/
-*.xcodeproj/
-!project.pbxproj
+
+## Xcode project files (keep project, ignore user data)
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
 
 ## Build products
 build/
